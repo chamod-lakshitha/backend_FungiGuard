@@ -61,7 +61,7 @@ def predict():
         "prediction" : "True",
         "result" : "Edible" if edibility < 0.45 else "Not_Edible",
         "value" : edibility,
-        "inputs" :  np.asarray(required_array_of_inputs).tolist()
+        "inputs" : np.asarray(required_array_of_inputs).tolist()
     })
 
 @app.route('/api/v1/explain', methods=['POST'])
